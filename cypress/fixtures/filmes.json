@@ -1,0 +1,26 @@
+[
+    {
+        "titulo": "Inception",
+        "descricao": "Um ladrão que rouba segredos do futuro.",
+        "ano": 2010,
+        "diretor": "Christopher Nolan"
+    },
+    {
+        "titulo": "Anora",
+        "descricao": "Uma menina que descobre o poder da magia.",
+        "ano": 2024,
+        "diretor": "Sean Baker"
+    },
+    {
+        "titulo": "The Matrix",
+        "descricao": "Um hacker que descobre a verdade sobre a realidade.",
+        "ano": 1999,
+        "diretor": "Lana Wachowski"
+    },
+    {
+        "titulo": "The Grand Budapest Hotel",
+        "descricao": "A história de um hotel e seus hóspedes em um país fictício.",
+        "ano": 2014,
+        "diretor": "Wes Anderson"
+    }
+]

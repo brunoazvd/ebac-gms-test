@@ -23,3 +23,29 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('preencherCadastro', (firstName, lastName, email, phone, password) => {
+  firstName && cy.get('#signup-firstname').type(firstName);
+  lastName && cy.get('#signup-lastname').type(lastName);
+  email && cy.get('#signup-email').type(email);
+  phone && cy.get('#signup-phone').type(phone);
+  password && cy.get('#signup-password').type(password);
+  cy.get('#signup-button').click();
+})
+
+Cypress.Commands.add('limparCamposCadastro', () => {
+  cy.get('#signup-firstname').clear();
+  cy.get('#signup-lastname').clear();
+  cy.get('#signup-email').clear();
+  cy.get('#signup-phone').clear();
+  cy.get('#signup-password').clear();
+})
+
+Cypress.Commands.add("buscarFilme", (pesquisa)=> {
+    cy.get('#search-input').type(pesquisa);
+    cy.get('#search-button').click();
+})
+
+Cypress.Commands.add("limparBusca", () => {
+    cy.get('#clear-button').click();
+})
