@@ -36,7 +36,7 @@ describe('US-001 - Busca de Filmes', () => {
       cy.get('#results-section > div').should('have.length', 0)
     })
 
-    it('CT-XX - Busca de filmes de uma lista', () => {
+    it('CT-07 - Busca de filmes de uma lista', () => {
         cy.fixture('filmes.json').then((filmes) => {
             filmes.forEach((filme) => {
                 cy.buscarFilme(filme.titulo);
