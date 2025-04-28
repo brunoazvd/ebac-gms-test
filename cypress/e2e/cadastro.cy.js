@@ -13,6 +13,10 @@ describe('US-012 - Funcionalidade: Cadastro de Usuários', () => {
     cy.visit('/');
   })
 
+  afterEach(() => {
+    cy.screenshot();
+  })
+
   it('CT-01 + CT-04: Cadastro de Campos Obrigatórios', () => {
     cy.preencherCadastro(
       faker.person.firstName(), 

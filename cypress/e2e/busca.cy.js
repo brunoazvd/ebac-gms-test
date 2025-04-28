@@ -5,6 +5,10 @@ describe('US-001 - Busca de Filmes', () => {
     beforeEach(() => {
       cy.visit('/');
     })
+
+    afterEach(() => {
+      cy.screenshot();
+    })
   
     it('CT-01 + CT-06: Busca Válida -> Limpar Busca', () => {
       cy.buscarFilme('Batman');
